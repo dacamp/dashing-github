@@ -22,7 +22,9 @@ and run `bundle install`. Everything should work now :)
 
 To use this widget, copy `github_status.html`, `github_status.coffee`, and `github_status.scss` into the `/widgets/github_status` directory. Put the `github_status.rb` file in your `/jobs` folder.
 
-You'll also need various images from GitHub [InvertoCat](https://status.github.com/images/invertocat.png), [Good Logo](https://status.github.com/images/logo-good.png), [Minor Logo](https://status.github.com/images/logo-minor.png), and [Major Logo](https://status.github.com/images/logo-major.png).  *Download* them. Please do not leech them from Github for each request you make to your widgit! Download them, and put the files in your `/assets/images` folder
+You'll also need various images from GitHub [InvertoCat](https://status.github.com/images/invertocat.png), [Good Logo](https://status.github.com/images/logo-good.png), [Minor Logo](https://status.github.com/images/logo-minor.png), and [Major Logo](https://status.github.com/images/logo-major.png).  *Download* them. Please do not leech them from Github for each request you make to your widgit! Download them, and put the files in your `/assets/images` folder.
+
+To download images, run the following script from your ROOT directory: `./tmp/github_pngs.sh`
 
 To include the widget in a dashboard, add the following snippet to the dashboard layout file:
 
