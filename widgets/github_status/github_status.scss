@@ -2,7 +2,7 @@
 // Widget-github-status styles
 // ----------------------------------------------------------------------------
 .widget-github-status {
-    background: #2A455C url("/assets/invertocat.png") no-repeat center;
+    background: #2A455C url("/assets/images/invertocat.png") no-repeat center;
     position: relative;
     overflow: hidden;
     &.good {color:#396;}
@@ -43,9 +43,9 @@
 	height:54px;
 	width: 250px;
 	background-size: 100% !important;
-	&.good { background: url("/assets/logo-good.png"); }
-	&.minor { background: url("/assets/logo-minor.png"); }
-	&.major { background: url("/assets/logo-major.png"); }
+	&.good { background: url("/assets/images/logo-good.png"); }
+	&.minor { background: url("/assets/images/logo-minor.png"); }
+	&.major { background: url("/assets/images/logo-major.png"); }
     }
 
     .updated-at {
