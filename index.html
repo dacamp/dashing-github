@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dashing-GitHub by dacamp</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/dacamp/dashing-github">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/dacamp/dashing-github/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/dacamp/dashing-github/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Dashing-GitHub</h1>
+          <p>Dashing widget evaluating GitHub service health</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/dacamp">dacamp</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>
+<a id="preview" class="anchor" href="#preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preview</h2>
+
+<p><img src="http://i.imgur.com/TVEgvie.png" alt="">
+<img src="http://i.imgur.com/Du2Bgts.png" alt="">
+<img src="http://i.imgur.com/q6dVN4j.png" alt=""></p>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Simple <a href="http://shopify.github.com/dashing">Dashing</a> widget (and associated job) to display GitHub Status. Uses <a href="https://status.github.com/">GitHubs Status API</a></p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p><a href="http://rubygems.org/gems/httparty">httparty</a></p>
+
+<p>Add it to dashing's gemfile:</p>
+
+<pre><code>gem 'httparty'
+</code></pre>
+
+<p>and run <code>bundle install</code>. Everything should work now :)</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>To use this widget, copy <code>github_status.html</code>, <code>github_status.coffee</code>, and <code>github_status.scss</code> into the <code>/widgets/github_status</code> directory. Put the <code>github_status.rb</code> file in your <code>/jobs</code> folder.</p>
+
+<p>You'll also need various images from GitHub <a href="https://status.github.com/images/invertocat.png">InvertoCat</a>, <a href="https://status.github.com/images/logo-good.png">Good Logo</a>, <a href="https://status.github.com/images/logo-minor.png">Minor Logo</a>, and <a href="https://status.github.com/images/logo-major.png">Major Logo</a>.  <em>Download</em> them. Please do not leech them from Github for each request you make to your widgit! Download them, and put the files in your <code>/assets/images</code> folder.</p>
+
+<p>To download images, run the following script from your ROOT directory: <code>./tmp/github_pngs.sh</code></p>
+
+<p>To include the widget in a dashboard, add the following snippet to the dashboard layout file:</p>
+
+<pre><code>&lt;li data-row="1" data-col="1" data-sizex="1" data-sizey="1"&gt;
+  &lt;div data-id="github_status" data-view="GithubStatus" data-title="GitHub Status"&gt;&lt;/div&gt;
+&lt;/li&gt;
+</code></pre>
+
+<h2>
+<a id="settings" class="anchor" href="#settings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Settings</h2>
+
+<p>Status is fetched every minute, which maybe a bit much. You can change that by editing the job schedule.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
